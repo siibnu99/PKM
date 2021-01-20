@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/tailwind.css" rel="stylesheet">
+    <link href="./assets/css/auth.css" rel="stylesheet">
+    <title>Auth</title>
+</head>
+
+<body class="dark:bg-gray-900">
+    <div class="box">
+        <div class="mobile-view relative">
+            <div class="sticky top-0 bg-white z-50 rounded-lg shadow-sm px-3 dark:bg-gray-700 dark:rounded-md py-2">
+                <div class="flex justify-between text-indigo-500  dark:text-white">
+                    <div>
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="text-lg font-medium">
+                        Profile
+                    </div>
+                    <div class="text-lg font-medium">
+                        <a href="./notifikasi.html">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="./message.html"> <i class="fas fa-comment-dots   fa-fw"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="flex justify-start p-3">
+                    <img src="./assets/img/profile.png" alt="" class="w-16 h-16 rounded-lg" />
+                    <div class=" px-2 my-auto text-indigo-600 dark:text-white ">
+                        <h1 class=" text-lg font-medium">Galih permana</h1>
+                        <h2 class="text-sm border-2 border-indigo-500  px-2 rounded-full dark:border-white">Member Asik
+                            <i class="fas fa-angle-right fa-fw"></i> </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="profile px-4">
+                <div class="flex justify-between text-indigo-700 dark:text-white py-2">
+                    <div class=" text-md">
+                        <i class="fas fa-chart-bar fa-fw"></i>
+                        Pesanan Saya
+                    </div>
+                    <div class="text-xs">
+                        lihat Riwayat Pesanan
+                    </div>
+                </div>
+                <div
+                    class="bg-indigo-100 text-indigo-600 rounded-lg flex py-3 px-2 font-medium justify-between text-center dark:bg-gray-700 dark:text-white">
+                    <div>
+                        <div class="bg-white mx-auto shadow-sm rounded-lg w-20 h-20 p-4">
+                            <img src="./assets/img/kursi_estetik.png" class="w-full h-full">
+                        </div>
+                        <h1 class="text-sm">Kursi Minimalis</h1>
+                    </div>
+                    <div>
+                        <div class="bg-white mx-auto shadow-sm rounded-lg w-20 h-20 p-4">
+                            <img src="./assets/img/kursi_estetik.png" class="w-full h-full">
+                        </div>
+                        <h1 class="text-sm">Kursi Minimalis</h1>
+                    </div>
+                    <div>
+                        <div class="bg-white mx-auto shadow-sm rounded-lg w-20 h-20 p-4">
+                            <img src="./assets/img/kursi_estetik.png" class="w-full h-full">
+                        </div>
+                        <h1 class="text-sm">Kursi Minimalis</h1>
+                    </div>
+                    <div>
+                        <div
+                            class="bg-white shadow-sm rounded-lg w-20 h-20 m-auto flex justify-center items-center dark:text-indigo-700">
+                            <i class="fas fa-plus fa-fw"></i>
+                        </div>
+                        <h1 class="text-sm">Lainya</h1>
+                    </div>
+                </div>
+                <div class="text-indigo-700 dark:text-white pt-4">
+                    <h1 class=" font-medium"><i class="fas mr-4 fa-cog fa-fw"></i> Pengaturan</h1>
+                    <div class="pl-3 space-y-6 mt-6 block">
+                        <a href="./profile-edit.html">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-user-alt fa-fw"></i> Nama, Nomer HP, dan Email
+                            </div>
+                        </a>
+                        <a href="./card.html">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-wallet fa-fw"></i> Kartu Rekening
+                            </div>
+                        </a>
+                        <a href="track.html">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-route fa-fw"></i> lacak Pengiriman
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-people-arrows fa-fw"></i> Beralih akun
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-globe fa-fw"></i> Bahasa
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-user-cog fa-fw"></i> Log Aktivitas
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-info-circle fa-fw"></i> Bantuan dan Dukungan
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hover:bg-indigo-400 p-2 rounded-md hover:text-white">
+                                <i class="fas mr-4 fa-door-open fa-fw"></i> Log Out
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toogle-mode fixed z-30 bottom-20 right-10">
+        <div class="border-2 w-12 h-12 rounded-full bg-gray-600 dark:bg-white dark:text-gray-400 text-white flex justify-center items-center focus:outline-none c-mode cursor-pointer "
+            onclick="cMode()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                <path
+                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+            </svg>
+        </div>
+    </div>
+    <script>
+        function theme() {
+            if (localStorage.theme === 'dark') {
+                document.querySelector('html').classList.add('dark')
+            } else {
+                document.querySelector('html').classList.remove('dark')
+            }
+        }
+        theme();
+
+        function cMode() {
+            if (localStorage.theme === 'dark') {
+                localStorage.theme = 'light'
+            } else {
+                localStorage.theme = 'dark'
+            }
+            theme();
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c2474a0999.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

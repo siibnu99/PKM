@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/tailwind.css" rel="stylesheet">
+    <link href="./assets/css/auth.css" rel="stylesheet">
+    <title>Auth</title>
+</head>
+
+<body class="dark:bg-gray-900">
+    <div class="box">
+        <div class="mobile-view relative px-3">
+            <div class="sticky top-0 bg-white z-50 rounded-lg shadow-sm  dark:bg-gray-700 dark:rounded-md py-2">
+                <div class="flex justify-between text-indigo-500  dark:text-white">
+                    <a href="./profile.html">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <div class="text-lg font-medium">
+                        Lacak Pengiriman
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=malang%20ub&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <div class="p-5 space-y-5">
+                <div class=" w-full border-gray-600 border-b-2 flex  text-indigo-700 space-x-5">
+                    <span class="my-auto">
+                        <i class="fas fa-car-side fa-fw "></i>
+                    </span>
+                    <div>
+                        <h1 class="text-xs">09:00</h1>
+                        <h1 class="font-bold">Jln. Patimura 198.</h1>
+                    </div>
+                </div>
+                <div class=" w-full border-gray-600 border-b-2 flex  text-indigo-700 space-x-5">
+                    <span class="my-auto">
+                        <i class="fas fa-car-side fa-fw "></i>
+                    </span>
+                    <div>
+                        <h1 class="text-xs">09:00</h1>
+                        <h1 class="font-bold">Jln. Patimura 198.</h1>
+                    </div>
+                </div>
+                <div class=" w-full border-gray-600 border-b-2 flex  text-indigo-700 space-x-5">
+                    <span class="my-auto">
+                        <i class="fas fa-car-side fa-fw "></i>
+                    </span>
+                    <div>
+                        <h1 class="text-xs">09:00</h1>
+                        <h1 class="font-bold">Jln. Patimura 198.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function theme() {
+            if (localStorage.theme === 'dark') {
+                document.querySelector('html').classList.add('dark')
+            } else {
+                document.querySelector('html').classList.remove('dark')
+            }
+        }
+        theme();
+
+        function cMode() {
+            if (localStorage.theme === 'dark') {
+                localStorage.theme = 'light'
+            } else {
+                localStorage.theme = 'dark'
+            }
+            theme();
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c2474a0999.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

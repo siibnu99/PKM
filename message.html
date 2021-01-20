@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/tailwind.css" rel="stylesheet">
+    <link href="./assets/css/auth.css" rel="stylesheet">
+    <title>Auth</title>
+</head>
+
+<body class="dark:bg-gray-900">
+    <div class="box">
+        <div class="mobile-view relative">
+            <div class="sticky top-0 bg-white z-50 rounded-lg shadow-sm px-3 dark:bg-gray-700 dark:rounded-md py-2">
+                <div class="flex justify-between text-indigo-500  dark:text-white">
+                    <a href="./profile.html">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <div class="text-lg font-medium">
+                        Percakapan
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-indigo-100 dark:bg-gray-700  m-5 rounded-md p-3 relative">
+                <div
+                    class="notice h-8 w-8 rounded-full flex justify-center items-center bg-indigo-700 text-white font-medium absolute -right-1 -top-1 dark:bg-white dark:text-indigo-700">
+                    1
+                </div>
+                <div class="flex justify-start space-x-4">
+                    <div class="w-20 h-20 p-2">
+                        <img src="./assets/img/profile.png" class="w-full h-full rounded-full">
+                    </div>
+                    <div class=" my-auto text-indigo-700 text-md dark:text-white">
+                        <h1 class=" font-bold ">shoes.id</h1>
+                        <h1>Apakah barang ready?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-indigo-100 dark:bg-gray-700  m-5 rounded-md p-3 relative">
+                <div
+                    class="notice h-8 w-8 rounded-full flex justify-center items-center bg-indigo-700 text-white font-medium absolute -right-1 -top-1 dark:bg-white dark:text-indigo-700">
+                    1
+                </div>
+                <div class="flex justify-start space-x-4">
+                    <div class="w-20 h-20 p-2">
+                        <img src="./assets/img/profile.png" class="w-full h-full rounded-full">
+                    </div>
+                    <div class=" my-auto text-indigo-700 text-md dark:text-white">
+                        <h1 class=" font-bold ">chair.id</h1>
+                        <h1>Apakah barang ready?</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toogle-mode fixed z-30 bottom-20 right-10">
+                <div class="border-2 w-12 h-12 rounded-full bg-gray-600 dark:bg-white dark:text-gray-400 text-white flex justify-center items-center focus:outline-none c-mode cursor-pointer "
+                    onclick="cMode()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function theme() {
+            if (localStorage.theme === 'dark') {
+                document.querySelector('html').classList.add('dark')
+            } else {
+                document.querySelector('html').classList.remove('dark')
+            }
+        }
+        theme();
+
+        function cMode() {
+            if (localStorage.theme === 'dark') {
+                localStorage.theme = 'light'
+            } else {
+                localStorage.theme = 'dark'
+            }
+            theme();
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c2474a0999.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
